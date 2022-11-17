@@ -23,8 +23,7 @@ include $(BOLOS_SDK)/Makefile.defines
 
 # TODO: compile with the right path restrictions
 # APP_LOAD_PARAMS  = --curve secp256k1
-APP_LOAD_PARAMS  = $(COMMON_LOAD_PARAMS)
-APP_PATH = ""
+APP_LOAD_PARAMS  = $(COMMON_LOAD_PARAMS) --path "44'/130'"
 
 APPVERSION_M = 1
 APPVERSION_N = 4
